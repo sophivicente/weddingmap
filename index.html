@@ -9,18 +9,28 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            width: 100%;
+        }
+        .map-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         iframe {
-            width: 100%; /* La carte occupe toute la largeur */
-            height: 100%; /* La carte occupe toute la hauteur */
-            border: none; /* Supprime les bordures */
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://www.google.com/maps/d/u/0/embed?mid=12gQCoPpoQappdAdBCfk9z0hAzF4hKPA&ehbc=2E312F" 
-        allowfullscreen>
-    </iframe>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/d/u/0/embed?mid=12gQCoPpoQappdAdBCfk9z0hAzF4hKPA&ehbc=2E312F" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
